@@ -34,6 +34,7 @@
     "document": true
   },
   "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "import/no-unresolved": "off",
     "import/no-duplicates": "off",
     "import/no-named-as-default": "off",
@@ -59,7 +60,7 @@
     "no-useless-escape": "off",
     "spaced-comment": "error",
     "curly": ["error", "multi-line"],
-    "eol-last": ["error", "always"],
+    "eol-last": "off",
     "guard-for-in": "error",
     "no-unused-labels": "error",
     "no-caller": "error",
