@@ -12,7 +12,7 @@
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
     "language": "en",
-    "tunnelUrl": "https://merkle-sitecore-demo-xm-xmreact-rendering.vercel.app"
+    "tunnelUrl": "https://merkle-demo-xm-cm.sitecoredemo.com"
   },
   "engines": {
     "node": ">=12",
