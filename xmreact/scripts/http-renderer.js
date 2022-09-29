@@ -15,14 +15,14 @@ startRenderHostTunnel('localhost', { port: 5000 })
       port: 5000,
       appInvocationInfoResolver: getDefaultAppInvocationInfoResolver({
         appPathResolver: (requestJson) => {
-          return path.resolve('./build/server.bundle');
+          return path.resolve('./build-rendering-host/server.bundle');
         },
       }),
       hooks: {
         beforeServerStarted: (server) => {
           server.use(
             '/static',
-            express.static(path.resolve(__dirname, '../build/static'), {
+            express.static(path.resolve(__dirname, '../build-rendering-host/static'), {
               fallthrough: false, // force 404 for unknown assets under /dist
             })
           );
