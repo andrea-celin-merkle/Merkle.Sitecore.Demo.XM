@@ -28,7 +28,7 @@ try {
 try {
   startRenderingHostServer({
     hostname: jssConfig.renderingHost,
-    port: 5000,
+    port: jssConfig.renderingHostPort,
     appInvocationInfoResolver: getDefaultAppInvocationInfoResolver({
       appPathResolver: (requestJson) => {
         return path.resolve('./build-rendering-host/server.bundle');
