@@ -11,6 +11,7 @@
     "sitecoreDistPath": "/dist/xmreact",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
+    "graphQLEndpoint": "https://merkle-demo-xm-cm.sitecoredemo.com",
     "language": "en",
     "sitecoreApiHost": "https://merkle-demo-xm-cm.sitecoredemo.com",
     "renderingHost": "https://merkle-sitecore-demo-xm-xmreact-rendering.vercel.app",
