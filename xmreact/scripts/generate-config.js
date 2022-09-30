@@ -17,6 +17,7 @@ module.exports = function generateConfig(configOverrides) {
   const defaultConfig = {
     sitecoreApiKey: 'no-api-key-set',
     sitecoreApiHost: '',
+    renderingHost: 'localhost',
     jssAppName: 'Unknown',
   };
 

@@ -13,6 +13,7 @@
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
     "language": "en",
     "sitecoreApiHost": "https://merkle-demo-xm-cm.sitecoredemo.com",
+    "renderingHost": "https://merkle-sitecore-demo-xm-xmreact-rendering.vercel.app",
     "tunnelUrl": "https://merkle-sitecore-demo-xm-xmreact-rendering.vercel.app"
   },
   "engines": {
@@ -92,7 +93,8 @@
     "jss": "jss",
     "start": "cross-env-shell JSS_MODE=disconnected \"npm-run-all --serial bootstrap --parallel start:react start:proxy start:watch-components\"",
     "start:connected": "scjss-verify-setup && npm-run-all --serial bootstrap start:react start:watch-components",
-    "start:rendering-host": "cross-env-shell NODE_ENV=development JSS_RENDER_ENGINE=http \"node scripts/http-renderer.js\"",
+    "start:local:rendering-host": "cross-env-shell RENDERING_HOST=localhost NODE_ENV=development JSS_RENDER_ENGINE=http \"node scripts/http-renderer.js\"",
+    "start:hosted:rendering-host": "cross-env-shell NODE_ENV=development JSS_RENDER_ENGINE=http \"node scripts/http-renderer.js\"",
     "build": "npm-run-all --serial bootstrap build:client build:server",
     "build:rendering-host": "npm-run-all --serial bootstrap build:client:rendering-host build:server afterbuild:rendering-host",
     "afterbuild:rendering-host": "del-cli build-rendering-host && move-cli build build-rendering-host",
