@@ -59,7 +59,7 @@
     "no-useless-escape": "off",
     "spaced-comment": "error",
     "curly": ["error", "multi-line"],
-    "eol-last": ["error", "off"],
+    "eol-last": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "guard-for-in": "error",
     "no-unused-labels": "error",
