@@ -20,7 +20,6 @@
 # Log files
 *.log
 
-.eslintcache
 scjssconfig.json
 *.deploysecret.config
 /build-rendering-host

@@ -25,11 +25,7 @@ if (disconnected && process.env.FETCH_WITH === constants.FETCH_WITH.GRAPHQL) {
   that the app can import and use.
 */
 const port = process.env.PORT || 3000;
-const configOverride = disconnected
-  ? { sitecoreApiHost: `http://localhost:${port}` }
-  : {
-    sitecoreApiHost: process.env.LAYOUT_SERVICE_HOST || null
-  };
+const configOverride = disconnected ? { sitecoreApiHost: `http://localhost:${port}` } : null;
 
 configGenerator(configOverride);
 
