@@ -1,7 +1,6 @@
 const { constants } = require('@sitecore-jss/sitecore-jss-react');
 const configGenerator = require('./generate-config');
 const chalk = require('chalk');
-const scjssconfig = require('../scjssconfig.json');
 
 /*
   BOOTSTRAPPING
@@ -29,7 +28,7 @@ const port = process.env.PORT || 3000;
 const configOverride = disconnected
   ? { sitecoreApiHost: `http://localhost:${port}` }
   : {
-    sitecoreApiHost: process.env.LAYOUT_SERVICE_HOST || scjssconfig.sitecore.layoutServiceHost
+    sitecoreApiHost: process.env.LAYOUT_SERVICE_HOST || null
   };
 
 configGenerator(configOverride);
