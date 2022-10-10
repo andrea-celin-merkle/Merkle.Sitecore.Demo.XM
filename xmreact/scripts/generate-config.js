@@ -87,6 +87,7 @@ function transformPackageConfig() {
   return {
     jssAppName: packageConfig.config.appName,
     defaultLanguage: packageConfig.config.language || 'en',
+    graphQLEndpoint: packageConfig.config.graphQLEndpoint || null,
     graphQLEndpointPath: packageConfig.config.graphQLEndpointPath || null,
   };
 }
